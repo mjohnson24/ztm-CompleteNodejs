@@ -4,6 +4,7 @@ const { httpGetAllPlanets } = require('./planets.controller'); // Correct import
 
 const planetsRouter = express.Router();
 
-planetsRouter.get('/planets', httpGetAllPlanets);
+// /planets and /planets/
+planetsRouter.get('/', httpGetAllPlanets);
 
 module.exports = planetsRouter;
